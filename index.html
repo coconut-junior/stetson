@@ -6,8 +6,30 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     </head>
     <body>
+        <div class = "banner">
+			<div id = "fade" style = "background-color: white;width:100%;position:fixed;overflow: hidden;">
+                <a href = "#hero" style = "background-image: url('images/logo-small.svg');"></a>
+            </div>
+		</div>
+        <div style = "position: absolute;top: 80vh;z-index:2;background-color:transparent;display:flex;justify-content:center;height:64px;width:100vw;">
+		
+			<svg class = "arrow" viewBox="0 0 20 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0.5 1L9.66025 6L18.6603 1" stroke-miterlimit="10" stroke-linecap="round"/>
+			</svg>
+				
+		</div>
+        <div class = "hero" id = "hero"><div class = "logo"></div></div>
+        <div class = "title-block">
+            <h1>Determine Your Hat Size</h1>
+            <div class = "illust" style = "background-image: url('images/graphic-hand.png');"></div>
+        </div>
+        <div class = "info-block"><div class = "text-block">
+            Wrap a measuring tape around your head. Press firmly, but not too tightly so it is flush against your skin. It should rest about 1/8 inch above your ear. Once you have the measurement, reference the hat sizing chart below to find the correct size. If you are in between sizes, you can insert sizers beneath the sweat band for a better fit.
+        </div></div>
         <div class = "size-chart">
             <div class = "measurements">
                 <div class = "block" id = "men" style = "grid-area:men;"><div class = "block-text">Men</div></div>
@@ -58,7 +80,18 @@
                 </div>
             </div>
         </div>
+        <script>
+		    $(window).scroll(function() {
+			  var scrollTop = $(this).scrollTop();
 
+			  $('#fade').css({
+			    opacity: function() {
+			      var elementHeight = $(this).height();
+			      return 1 - (elementHeight - scrollTop) / elementHeight;
+			    }
+			  });
+			});
+		</script>
         <script src = "js/interactions.js"></script>
     </body>
 </html>
