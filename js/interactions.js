@@ -53,7 +53,7 @@ var women_extra_sizes = {
 chart.addEventListener("mouseover", event => {
     var t = event.target.textContent;
     if (event.target.className == "block") {
-        event.target.style.backgroundColor = primary;
+        event.target.style.backgroundColor = secondary;
     }
     
     try {
@@ -63,51 +63,51 @@ chart.addEventListener("mouseover", event => {
             switch(i) {
                 case 1:
                     var block = document.querySelector("#m-s");
-                    block.style.backgroundColor = primary;
+                    block.style.backgroundColor = secondary;
                     break;
                 case 2:
                     var block = document.querySelector("#m-m");
-                    block.style.backgroundColor = primary;
+                    block.style.backgroundColor = secondary;
                     break;
                 case 3:
                     var block = document.querySelector("#m-l");
-                    block.style.backgroundColor = primary;
+                    block.style.backgroundColor = secondary;
                     break;
                 case 4:
                     var block = document.querySelector("#m-xl");
-                    block.style.backgroundColor = primary;
+                    block.style.backgroundColor = secondary;
                     break;
                 case 5:
                     var block = document.querySelector("#m-xxl");
-                    block.style.backgroundColor = primary;
+                    block.style.backgroundColor = secondary;
                     break;
                 case 6:
                     var block = document.querySelector("#w-s");
-                    block.style.backgroundColor = primary;
+                    block.style.backgroundColor = secondary;
                     break;
                 case 7:
                     var block = document.querySelector("#w-m");
-                    block.style.backgroundColor = primary;
+                    block.style.backgroundColor = secondary;
                     break;
                 case 8:
                     var block = document.querySelector("#w-l");
-                    block.style.backgroundColor = primary;
+                    block.style.backgroundColor = secondary;
                     break;
                 case 9:
                     var block = document.querySelector("#w-xl");
-                    block.style.backgroundColor = primary;
+                    block.style.backgroundColor = secondary;
                     break;
                 case 10:
                     var block = document.querySelector("#w-xxl");
-                    block.style.backgroundColor = primary;
+                    block.style.backgroundColor = secondary;
                     break;
                 case 11:
                     var block = document.querySelector("#w-sm");
-                    block.style.backgroundColor = primary;
+                    block.style.backgroundColor = secondary;
                     break;
                 case 12:
                     var block =  document.querySelector("#w-ml");
-                    block.style.backgroundColor = primary;
+                    block.style.backgroundColor = secondary;
                     break;
             }
         }

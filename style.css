@@ -17,6 +17,7 @@
     text-align: center;
     text-justify: center;
     line-height: 30px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,11 +32,14 @@
 }
 
 .size-chart {
+    font-size: 14px;
     width:25%;
     height: auto;
+    margin: auto;
     padding: 20px;
     grid-gap: 40px;
-    background-color: red;
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "s m";
@@ -44,7 +48,6 @@
 .measurements {
     height: auto;
     width: 100%;
-    background-color: aqua;
     grid-area: m;
     display: grid;
     grid-gap: 10px;
@@ -70,7 +73,6 @@
 .sizes {
     height: auto;
     width: 100%;
-    background-color: aquamarine;
     grid-area: s;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -95,8 +97,8 @@
 .chart {
     height:auto;
     width:100%;
-    background-color: blue;
     box-shadow:0px 0px 0px 2px var(--secondary) inset;
+    border-radius: 5px;
     grid-area: chart;
     display:grid;
     grid-template-columns: 1fr 1fr;
