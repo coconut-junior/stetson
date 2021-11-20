@@ -1,0 +1,104 @@
+:root {
+    --primary : #F1EEE9;
+    --secondary: #E7DFD2;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+#no-border {
+    border:none;
+}
+
+.block {
+    border: 2px solid var(--secondary);
+    text-align: center;
+    text-justify: center;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.block-text {
+    text-align: center;
+    font-family: Lora, serif;
+    margin:auto;
+    pointer-events:none;
+}
+
+.size-chart {
+    width:25%;
+    height: auto;
+    padding: 20px;
+    grid-gap: 40px;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "s m";
+}
+
+.measurements {
+    height: auto;
+    width: 100%;
+    background-color: aqua;
+    grid-area: m;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(14, 1fr);
+    grid-template-areas: 
+        "men women women"
+        "m-s w-s ."
+        "m-s w-s w-sm"
+        "m-s w-s w-sm"
+        "m-m w-s w-sm"
+        "m-m w-m w-ml"
+        "m-m w-m w-ml"
+        "m-l w-l ."
+        "m-l w-l ."
+        "m-xl w-xl ."
+        "m-xl w-xl ."
+        "m-xxl w-xxl ."
+        "m-xxl w-xxl ."
+        "m-xxl w-xxl .";
+}
+
+.sizes {
+    height: auto;
+    width: 100%;
+    background-color: aquamarine;
+    grid-area: s;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(14,1fr);
+    grid-template-areas: 
+        "us inches"
+        "chart chart"
+        "chart chart"
+        "chart chart"
+        "chart chart"
+        "chart chart"
+        "chart chart"
+        "chart chart"
+        "chart chart"
+        "chart chart"
+        "chart chart"
+        "chart chart"
+        "chart chart"
+        "chart chart";
+}
+
+.chart {
+    height:auto;
+    width:100%;
+    background-color: blue;
+    box-shadow:0px 0px 0px 2px var(--secondary) inset;
+    grid-area: chart;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(13, 1fr);
+}
