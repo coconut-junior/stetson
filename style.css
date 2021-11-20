@@ -26,13 +26,13 @@
 
 .block-text {
     text-align: center;
-    font-family: Lora, serif;
     margin:auto;
     pointer-events:none;
 }
 
 .size-chart {
     font-size: 14px;
+    font-family: Lora, serif;
     width:25%;
     height: auto;
     margin: auto;
