@@ -17,6 +17,21 @@
     color:white;
 }
 
+.menu-button {
+    position: absolute;
+    z-index: 1;
+    cursor:pointer;
+}
+
+#menu-bg {
+    fill: #F1EEE9;
+    transition: 0.3s;
+}
+
+.menu-button:hover #menu-bg {
+    fill: var(--secondary);
+}
+
 #fade {
 	opacity: 0;
     display: flex;
@@ -99,9 +114,20 @@ body {
     padding:80px;
 }
 
+.site-link {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    background-image: url('images/site_link.svg');
+    background-size:contain;
+    background-repeat:no-repeat;
+    height:36px;
+    width:36px;
+}
+
 h1 {
-    margin:40px;
-    text-align: right;
+    position: absolute;
+    margin:auto;
     color: var(--tertiary);
     font-size: 48px;
 }
