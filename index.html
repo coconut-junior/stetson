@@ -14,7 +14,7 @@
     <body>
         <a href = "https://stetson.com"><div class = "site-link"></div></a>
         <div class = "banner">
-            <svg class = "menu-button" style = "margin: 20px;" width="64" height="64" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class = "menu-button" width="64" height="64" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="Group 1">
                 <g >
                 <rect id="menu-bg"x="6" y="6" width="76" height="76" rx="15"/>
@@ -34,7 +34,7 @@
                 </g>
             </svg>
 			<div id = "fade" style = "background-color: white;width:100%;position:fixed;overflow: hidden;">
-                <a href = "#hero" style = "background-image: url('images/logo-small.svg');"></a>
+                <a href = "#hero" style = "background-size:75%;background-image: url('images/logo-small.svg');"></a>
             </div>
 		</div>
         <div style = "position: absolute;top: 80vh;z-index:2;background-color:transparent;display:flex;justify-content:center;height:64px;width:100vw;">
@@ -47,11 +47,21 @@
         <div class = "hero" id = "hero"><div class = "logo"></div></div>
         <div class = "title-block" id = "section1">
             <h1>Determine Your Hat Size</h1>
-            <div class = "illust" style = "background-image: url('images/graphic-hand.png');"></div>
+            <div class = "illust" id = "hand" style = "background-image: url('images/graphic-hand.png');"></div>
         </div>
         <div class = "info-block"><div class = "text-block">
             Wrap a measuring tape around your head. Press firmly, but not too tightly so it is flush against your skin. It should rest about 1/8 inch above your ear. Once you have the measurement, reference the hat sizing chart below to find the correct size. If you are in between sizes, you can insert sizers beneath the sweat band for a better fit.
         </div></div>
+
+        <div class = "title-block" id = "section2">
+            <h1>Open Road Deluxe vs 6X</h1>
+            <div class = "illust" id = "hat1" style = "height:100%;width:100%;background-image: url('images/open-road.png');"></div>
+            <div class = "illust" id = "hat2" style = "height:100%;width:100%;left:auto;right:-25vw;background-image: url('images/6x.png');"></div>
+        </div>
+        <div class = "info-block"><div class = "text-block">
+            The open road 6X is the classic western style featuring a firm, fur felt finish. The open road royal deluxe is the new dress style featuring a lighter, softer fur felt finish.
+        </div></div>
+            
         <div class = "size-chart">
             <div class = "measurements">
                 <div class = "block" id = "men" style = "grid-area:men;"><div class = "block-text">Men</div></div>
