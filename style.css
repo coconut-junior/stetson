@@ -4,6 +4,11 @@
     --tertiary: #3F1E1F;
 }
 
+::selection {
+    background-color: var(--tertiary);
+    color:white;
+}
+
 * {
     margin:0;
     padding:0;
@@ -13,12 +18,6 @@
 
 body {
     overflow-x: hidden;
-}
-
-
-::selection {
-    background-color: var(--tertiary);
-    color:white;
 }
 
 .menu-button {
@@ -58,15 +57,11 @@ a {
 	position: fixed;
 	width: auto;
 	bottom: 0;
-	z-index: 2;
+	z-index: 3;
 }
 
 .banner, #fade {
     height: 120px;;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 .logo {
@@ -82,10 +77,11 @@ body {
 
 .hero {
     background-image:url('images/hero.svg');
-    background-size: contain;
+    background-size:auto;
     background-position: top;
     background-repeat: repeat-x;
     height: 100vh;
+    padding-bottom: 200px;
     width: auto;
     margin-bottom: 100px;
     display: flex;
@@ -132,10 +128,12 @@ body {
 }
 
 h1 {
+    text-align: center;
     position: absolute;
     margin:auto;
     color: var(--tertiary);
     font-size: 3em;
+    z-index: 2;
 }
 
 .title-block {
