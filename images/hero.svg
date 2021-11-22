@@ -21,7 +21,7 @@
 <g style="mix-blend-mode:color-burn">
 <path d="M1440 790C1090.22 790 743 886 575 886C407 886 205.5 790 0.00012207 790V1119.5C260 1119.5 436.242 913.88 710.5 974.5C991 1036.5 1204 1119.5 1440 1119.5C1440 1119.5 1789.78 790 1440 790Z" fill="url(#pattern0)"/>
 </g>
-<circle cx="720" cy="216" r="51" fill="#F1EEE9"/>
+<circle cx="720" cy="684" r="51" fill="#F1EEE9"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.250712" height="1.21396">
