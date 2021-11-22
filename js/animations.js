@@ -36,5 +36,13 @@ if(!isMobile()) {
     
     gsap.from(".info-block", {opacity: 0,yPercent: -70,scrollTrigger: {trigger: ".info-block",scrub: true}});
     gsap.from(".size-chart", {opacity: 0,yPercent: -70,scrollTrigger: {trigger: ".size-chart",scrub: true}});
-    gsap.to(".clouds",{backgroundPosition:-100,duration:160,repeat:-1,delay:0});
+    gsap.to(".clouds", {
+        duration: 180,
+        ease: "none",
+        backgroundPosition: "+=500", //move each box 500px to right
+        modifiers: {
+          x: gsap.utils.unitize(x => parseFloat(x) % 500) //force x value to be between 0 and 500 using modulus
+        },
+        repeat: -1
+      });
 }
