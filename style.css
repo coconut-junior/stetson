@@ -105,7 +105,8 @@ a {
 .clouds {
     position: absolute;
     height:25vh;
-    width: 150vw;
+    top:25vh;
+    width: 200vw;
     background-image:url('images/clouds.svg');
     background-repeat:repeat-x;
     background-size:contain;
