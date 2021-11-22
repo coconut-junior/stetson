@@ -37,7 +37,7 @@ if(!isMobile()) {
     gsap.from(".info-block", {opacity: 0,yPercent: -70,scrollTrigger: {trigger: ".info-block",scrub: true}});
     gsap.from(".size-chart", {opacity: 0,yPercent: -70,scrollTrigger: {trigger: ".size-chart",scrub: true}});
     gsap.to(".clouds", {
-        duration: 180,
+        duration: 600,
         ease: "none",
         backgroundPosition: "+=500", //move each box 500px to right
         modifiers: {
