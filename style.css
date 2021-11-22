@@ -52,16 +52,12 @@ body {
 }
 
 .menu-button:active #menu {
-    fill: var(--tertiary);
+    fill: var(--secondary);
 }
 
 #menu {
-    fill: #F1EEE9;
-    transition: 0.3s;
-}
-
-.menu-button:hover #menu {
     fill: #F4F4F2;
+    transition: 0.3s;
 }
 
 #fade {
