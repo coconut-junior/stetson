@@ -23,7 +23,7 @@ body {
 .menu-screen {
     height:100%;
     width: 100%;
-    padding: 100px;
+    padding: 80px;
     position: fixed;
     top:0px;
     left:0px;
@@ -96,6 +96,7 @@ ul {
     position: relative;
     height:auto;
     width:100%;
+    margin:auto;
 }
 
 li {
@@ -352,7 +353,7 @@ h1 {
     margin-bottom: 200px;
 }
 
-@media (max-width:720px) {
+@media (max-width:1024px) {
     ul {
         width: 100%;
         margin:40px;
