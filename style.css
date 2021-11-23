@@ -20,6 +20,22 @@ body {
     overflow-x: hidden;
 }
 
+.menu-screen {
+    height:100%;
+    width: 100%;
+    padding: 100px;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 3;
+    background-color:var(--primary);
+    opacity: 0;
+    top:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
 .share-button {
     background-color: #3C3737;
     height: 42px;
@@ -56,7 +72,7 @@ body {
 }
 
 #menu {
-    fill: #F4F4F2;
+    fill: white;
     transition: 0.3s;
 }
 
@@ -76,10 +92,40 @@ a {
     text-decoration: none;
 }
 
+ul {
+    position: relative;
+    height:auto;
+    width:100%;
+}
+
+li {
+    font-size: 1em;
+    color: var(--tertiary);
+    background-color: transparent;
+    width:50%;
+    height:40px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    border-radius: 10px;
+    transition:0.3s;
+    background-size:contain;
+    background-position:right;
+    background-repeat: no-repeat;
+}
+
+li:hover {
+    background-color: var(--secondary);
+    background-image: url('images/arrow.svg');
+}
+
 .banner {
 	position: fixed;
 	width: auto;
 	bottom: 0;
+    width:100%;
 	z-index: 3;
 }
 
@@ -306,6 +352,19 @@ h1 {
     margin-bottom: 200px;
 }
 
+@media (max-width:720px) {
+    ul {
+        width: 100%;
+        margin:40px;
+    }
+    li {
+        width: auto;
+    }
+    .menu-screen {
+        padding:0px;
+    }
+}
+
 @media (pointer: coarse) {
     .hero {
         background-size:cover;
@@ -350,5 +409,14 @@ h1 {
     }
     .clouds {
         display: none;
+    }
+    .menu-screen {
+        padding:0;
+    }
+    li {
+        width:auto;
+        font-size: 2em;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
