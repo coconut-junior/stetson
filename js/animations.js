@@ -69,6 +69,14 @@ if(!isMobile()) {
           scrub: true
         }, 
     });
+    gsap.from("#bag", {
+        xPercent: -50,
+        ease: "none",
+        scrollTrigger: {
+          trigger: "#section3",
+          scrub: true
+        }, 
+    });
     
     gsap.to(".logo", {opacity: 0,yPercent: -100,scrollTrigger: {trigger: ".title-block",scrub: true}});
     
