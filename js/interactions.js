@@ -51,6 +51,7 @@ var women_extra_sizes = {
 };
 
 chart.addEventListener("mouseover", event => {
+    document.getElementById("block1").style.backgroundColor = "Transparent";
     var t = event.target.textContent;
     if (event.target.className == "block") {
         event.target.style.backgroundColor = secondary;
