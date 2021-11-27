@@ -413,6 +413,8 @@ h1 {
     }
     .size-chart {
         font-size:2em;
+        grid-template-columns: 1fr;
+        grid-template-areas: "s" "m";
     }
     .block {
         border-width: 2px;
