@@ -43,6 +43,7 @@ function openMenu() {
 }
 
 if(!isMobile()) {
+
     gsap.from("#hand", {
         xPercent: -50,
         ease: "none",
@@ -82,4 +83,9 @@ if(!isMobile()) {
         },
         repeat: -1
       });
+}
+else {
+    document.getElementById("block1").style.backgroundColor = secondary;
+    document.getElementById("m-s").style.backgroundColor = secondary;
+    document.getElementById("w-s").style.backgroundColor = secondary;
 }
