@@ -443,7 +443,7 @@ h2 {
         border-radius: 20px;
     }
     .clouds {
-        display: none;
+        width:100%;
     }
     .menu-screen {
         padding:0;
