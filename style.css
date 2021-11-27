@@ -157,11 +157,11 @@ li:hover {
 
 .hero {
     background-image:url('images/hero.svg');
-    background-size:auto;
+    background-size:contain;
     background-position: top;
     background-repeat: repeat-x;
     height: 100vh;
-    padding-bottom: 200px;
+    margin-bottom: 200px;
     width: auto;
     margin-bottom: 100px;
     display: flex;
@@ -349,6 +349,10 @@ h1 {
     grid-template-rows: repeat(13, 1fr);
 }
 
+.links {
+    display: flex;justify-content:center;align-items:center;position: absolute;top:60px;right:60px;
+}
+
 .title-block, .info-block, .size-chart {
     margin-bottom: 200px;
 }
@@ -375,11 +379,17 @@ h1 {
         display: none;
     }
     .site-link {
-        height: 60px;
-        width: 60px;
+        height: 72px;
+        width: 72px;
+    }
+    .links {
+        top:96px;
+        right: 96px;
     }
     .share-button {
-        height: 60px;
+        font-size: 2em;
+        height: 72px;
+        border-radius: 20px;
     }
     .menu-button {
         height: 100px;
