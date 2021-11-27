@@ -401,8 +401,8 @@ h2 {
         display: none;
     }
     .links {
-        top:96px;
-        right: 96px;
+        top: 50px;
+        right: 50px;
     }
     .share-button {
         font-size: 2em;
