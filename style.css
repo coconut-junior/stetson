@@ -375,12 +375,12 @@ h1 {
         background-size:cover;
         background-position:center;
     }
-    #hat2 {
-        display: none;
-    }
     .site-link {
         height: 72px;
         width: 72px;
+    }
+    #hat2 {
+        display: none;
     }
     .links {
         top:96px;
@@ -416,9 +416,13 @@ h1 {
         grid-template-columns: 1fr;
         grid-template-areas: "s" "m";
     }
+    .chart {
+        border-radius: 20px;
+    }
     .block {
         border-width: 2px;
         padding: 20px;
+        border-radius: 20px;
     }
     .clouds {
         display: none;
