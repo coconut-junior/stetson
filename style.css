@@ -1,7 +1,7 @@
 :root {
     --primary : #F1EEE9;
     --secondary: #E7DFD2;
-    --tertiary: #3F1E1F;
+    --tertiary: #3c3737;
 }
 
 ::selection {
@@ -37,11 +37,11 @@ body {
 }
 
 .share-button {
-    background-color: #3C3737;
+    background-color: #ffffff78;
     height: 42px;
     width: 120px;
-    border-radius: 5px;
-    color: white;
+    border-radius: 10px;
+    color: #B65030;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +49,7 @@ body {
 }
 
 .share-button:hover {
-    background-color:#625757;
+    background-color: white;
 }
 
 .menu-button {
@@ -164,12 +164,14 @@ li:hover {
     background-position: top;
     background-repeat: repeat-x;
     height: 100%;
-    margin-bottom: 200px;
+    margin: 40px;
     width: auto;
     margin-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
+    overflow:hidden;
 }
 
 .arrow {
@@ -200,29 +202,38 @@ li:hover {
 }
 
 .site-link {
+    background-color: #ffffff78;
+    height: 42px;
+    width: 42px;
+    border-radius: 10px;
+    color: #B65030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
     background-image: url('images/site_link.svg');
-    background-size:contain;
-    background-repeat:no-repeat;
-    height:36px;
-    width:36px;
-    margin-right: 40px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 60%;
+}
+
+.site-link:hover {
+    background-color:white;
 }
 
 h1 {
     text-align: center;
-    position: absolute;
-    margin:auto;
     color: var(--tertiary);
     font-size: 3em;
     z-index: 2;
+    margin: 40px;
     mix-blend-mode: difference;
 }
 
 h2 {
-    position: relative;
     font-size: 2em;
     padding:10px;
-    width: 100%;
+    width: auto;
     text-align: right;
     color: var(--secondary);
     top:0;
@@ -230,8 +241,8 @@ h2 {
 }
 
 .title-block {
-    height: 400px;
-    width: 50%;
+    height: auto;
+    width: 60%;
     border-radius: 20px;
     border: 1px solid var(--tertiary);
     margin:auto;
@@ -239,35 +250,32 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    flex-direction: column;
     flex-shrink: 0;
     flex-grow: 0;
-    padding: 20px;
+    padding: 40px;
+    overflow:hidden;
 }
 
 .illust {
-    height: 150%;
-    width: 150%;
+    height: 25vw;
+    width: 25vw;
     position: relative;
-    top: -100px;
-    left: -25vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    z-index: 1;
 }
 
 .info-block {
     font-size: 1em;
     line-height: 150%;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--primary);
     height: auto;
-    width: 50%;
+    width: auto;
     border-radius: 20px;
-    margin: auto ;
     padding: 20px;
 }
 
@@ -292,10 +300,10 @@ h2 {
 .size-chart {
     font-size: 1em;
     font-family: Lora, serif;
-    width: 50%;
+    width: 60%;
     height: auto;
     margin: auto;
-    padding: 20px;
+    padding: 40px;
     grid-gap: 40px;
     border: 2px solid var(--secondary);
     border-radius: 20px;
@@ -365,11 +373,15 @@ h2 {
 }
 
 .links {
-    display: flex;justify-content:center;align-items:center;position: absolute;top:60px;right:60px;
+    display: flex;justify-content:center;align-items:center;position: absolute;top:60px;right:120px;
 }
 
-.title-block, .info-block, .size-chart {
-    margin-bottom: 200px;
+.title-block, .size-chart {
+    margin-bottom: 10%;
+}
+
+.size-chart {
+    margin-bottom: 20%;
 }
 
 @media (max-width:1024px) {
@@ -386,6 +398,11 @@ h2 {
 }
 
 @media (pointer: coarse) {
+    .illust {
+        height:50vw;
+        width:50vw;
+        left:0;
+    }
     .hero {
         background-size:cover;
         background-position:center;
@@ -401,6 +418,7 @@ h2 {
         display: none;
     }
     .links {
+        display: none;
         top: 50px;
         right: 50px;
     }
@@ -423,8 +441,8 @@ h2 {
     .title-block {
         border-width: 2;
     }
-    .title-block,.info-block,.size-chart {
-        width: 90%;
+    .title-block,.size-chart {
+        width: 80%;
     }
     .info-block {
         font-size: 2em;

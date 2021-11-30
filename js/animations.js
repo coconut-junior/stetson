@@ -45,7 +45,7 @@ function openMenu() {
 if(!isMobile()) {
 
     gsap.from("#hand", {
-        xPercent: -50,
+        yPercent: 50,
         ease: "none",
         scrollTrigger: {
           trigger: "#section1",
@@ -54,23 +54,16 @@ if(!isMobile()) {
     });
     
     gsap.from("#hat1", {
-        xPercent: -50,
+        yPercent: 50,
         ease: "none",
         scrollTrigger: {
           trigger: "#section2",
           scrub: true
         }, 
     });
-    gsap.from("#hat2", {
-        xPercent: +50,
-        ease: "none",
-        scrollTrigger: {
-          trigger: "#section2",
-          scrub: true
-        }, 
-    });
+
     gsap.from("#bag", {
-        xPercent: -50,
+        yPercent: 50,
         ease: "none",
         scrollTrigger: {
           trigger: "#section3",
@@ -80,14 +73,13 @@ if(!isMobile()) {
     
     gsap.to(".logo", {opacity: 0,yPercent: -100,scrollTrigger: {trigger: ".title-block",scrub: true}});
     
-    gsap.from(".info-block", {opacity: 0,yPercent: -70,scrollTrigger: {trigger: ".info-block",scrub: true}});
     gsap.from(".size-chart", {opacity: 0,yPercent: -70,scrollTrigger: {trigger: ".size-chart",scrub: true}});
     gsap.to(".clouds", {
         duration: 600,
         ease: "none",
-        backgroundPosition: "+=500", //move each box 500px to right
+        backgroundPosition: "+=500",
         modifiers: {
-          x: gsap.utils.unitize(x => parseFloat(x) % 500) //force x value to be between 0 and 500 using modulus
+          x: gsap.utils.unitize(x => parseFloat(x) % 500)
         },
         repeat: -1
       });
