@@ -82,7 +82,11 @@ if(!isMobile()) {
           x: gsap.utils.unitize(x => parseFloat(x) % 500)
         },
         repeat: -1
-      });
+    });
+
+    //fix cloud width
+    console.log(document.body.clientWidth);
+    document.querySelector(".clouds").style.width = document.body.clientWidth - 80 + "px";
 }
 else {
     document.getElementById("block1").style.backgroundColor = secondary;
