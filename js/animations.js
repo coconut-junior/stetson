@@ -9,10 +9,10 @@ window.isMobile = function() {
 var Anchors = document.getElementsByTagName("a");
 
 for (var i = 0; i < Anchors.length ; i++) {
-    Anchors[i].addEventListener("click", 
+    Anchors[i].addEventListener("click",
         function (event) {
             closeMenu();
-        }, 
+        },
         false);
 }
 
@@ -27,7 +27,7 @@ function closeMenu() {
 }
 
 function openMenu() {
-    var duration = 0.5
+    var duration = 0.5;
 
     if(!menuOpen) {
         document.body.style.overflowY = "hidden";
@@ -44,36 +44,6 @@ function openMenu() {
 
 if(!isMobile()) {
 
-    gsap.from("#hand", {
-        yPercent: 50,
-        ease: "none",
-        scrollTrigger: {
-          trigger: "#section1",
-          scrub: true
-        }, 
-    });
-    
-    gsap.from("#hat1", {
-        yPercent: 50,
-        ease: "none",
-        scrollTrigger: {
-          trigger: "#section2",
-          scrub: true
-        }, 
-    });
-
-    gsap.from("#bag", {
-        yPercent: 50,
-        ease: "none",
-        scrollTrigger: {
-          trigger: "#section3",
-          scrub: true
-        }, 
-    });
-    
-    gsap.to(".logo", {opacity: 0,yPercent: -100,scrollTrigger: {trigger: ".title-block",scrub: true}});
-    
-    gsap.from(".size-chart", {opacity: 0,yPercent: -70,scrollTrigger: {trigger: ".size-chart",scrub: true}});
     gsap.to(".clouds", {
         duration: 200,
         ease: "none",
