@@ -75,7 +75,7 @@ if(!isMobile()) {
     
     gsap.from(".size-chart", {opacity: 0,yPercent: -70,scrollTrigger: {trigger: ".size-chart",scrub: true}});
     gsap.to(".clouds", {
-        duration: 600,
+        duration: 200,
         ease: "none",
         backgroundPosition: "+=500",
         modifiers: {
