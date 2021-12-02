@@ -21,7 +21,7 @@ body {
 }
 
 .menu-screen {
-    height: 100vh;
+    height:100vh;
     width: 100%;
     padding: 80px;
     position: fixed;
@@ -159,6 +159,54 @@ li:hover {
     background-size:contain;
 }
 
+h3 {
+    text-align: center;
+}
+
+.hat-styles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    height: 10%;
+    padding-top:40px;
+}
+
+.style-block {
+    background-color:var(--primary);
+    height: 50vh;
+    width: auto;
+    border-radius: 20px;
+    overflow:hidden;
+    background-size:80%;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.style-block:hover {
+    background-color: var(--secondary);
+}
+
+.style-block:hover .style-info {
+    opacity:1;
+}
+
+.style-info {
+    line-height: 200%;
+    font-size: 1em;
+    display: flex;
+    background-color: var(--secondary);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.3s;
+}
+
 .hero {
     background-image:url('images/hero.svg');
     background-position: top;
@@ -168,7 +216,7 @@ li:hover {
     width: auto;
     margin-bottom: 100px;
     display: flex;
-    padding-bottom: 20vh;
+    padding-bottom: 50vh;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
@@ -321,7 +369,7 @@ h2 {
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(14, 1fr);
-    grid-template-areas:
+    grid-template-areas: 
         "men women women"
         "m-s w-s ."
         "m-s w-s w-sm"
@@ -345,7 +393,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(14,1fr);
-    grid-template-areas:
+    grid-template-areas: 
         "us inches"
         "chart chart"
         "chart chart"
@@ -395,6 +443,13 @@ h2 {
     }
     .menu-screen {
         padding:0px;
+    }
+    .hat-styles {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr
+    }
+    .style-block {
+        height: 25vh;
     }
 }
 
