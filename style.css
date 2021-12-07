@@ -23,7 +23,7 @@ body {
 .menu-screen {
     height:100vh;
     width: 100%;
-    padding: 80px;
+    padding: 40px;
     position: fixed;
     top:0px;
     left:0px;
@@ -98,7 +98,7 @@ a {
 ul {
     position: relative;
     height:auto;
-    width:100%;
+    width:40%;
     margin:auto;
 }
 
@@ -106,7 +106,7 @@ li {
     font-size: 1em;
     color: var(--tertiary);
     background-color: transparent;
-    width:50%;
+    width:80%;
     height:40px;
     list-style: none;
     display: flex;
@@ -160,6 +160,7 @@ li:hover {
 }
 
 h3 {
+    color: var(--tertiary);
     text-align: center;
 }
 
@@ -194,7 +195,7 @@ h3 {
 }
 
 .style-info {
-    line-height: 200%;
+    line-height: 250%;
     font-size: 1em;
     display: flex;
     background-color: var(--secondary);
@@ -437,6 +438,9 @@ h2 {
     ul {
         width: 100%;
         margin:40px;
+    }
+    #social-links {
+        display: none;
     }
     li {
         width: auto;
