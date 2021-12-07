@@ -37,19 +37,19 @@ body {
 }
 
 .share-button {
-    background-color: #ffffff78;
+    background-color: rgba(255, 255, 255, 0.5);
     height: 42px;
-    width: 120px;
+    width: 42px;
+    margin-right: 20px;
     border-radius: 10px;
-    color: #B65030;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-}
-
-.share-button:hover {
-    background-color: white;
+    background-image: url('images/youtube.svg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 60% 60%;
 }
 
 .menu-button {
@@ -141,7 +141,7 @@ li:hover {
     width: 25%;
     height: 25%;
     background-image:url('images/logo.svg');
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position:center;
     position: relative;
@@ -252,11 +252,11 @@ h3 {
 }
 
 .site-link {
-    background-color: #ffffff78;
+    background-color: rgba(255, 255, 255, 0.5);
     height: 42px;
-    width: 42px;
+    width: 84px;
     border-radius: 10px;
-    color: #B65030;
+    color: #3c3737;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -264,10 +264,10 @@ h3 {
     background-image: url('images/site_link.svg');
     background-repeat: no-repeat;
     background-position:center;
-    background-size: 60%;
+    background-size: 60% 60%;
 }
 
-.site-link:hover {
+.site-link:hover, .share-button:hover {
     background-color:white;
 }
 
@@ -423,7 +423,7 @@ h2 {
 }
 
 .links {
-    display: flex;justify-content:center;align-items:center;position: absolute;top:60px;right:120px;
+    display: flex;justify-content:center;align-items:center;position: absolute;top:80px;right:120px;
 }
 
 .title-block, .size-chart {
@@ -464,6 +464,7 @@ h2 {
         left:0;
     }
     .hero {
+        margin: 40px;
         background-size:cover;
         background-position:center;
         padding: 0;
