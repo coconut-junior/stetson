@@ -22,7 +22,7 @@ function closeMenu() {
     gsap.to(".menu-screen",{opacity:0,duration:duration});
     gsap.to(".menu-screen",{yPercent:+100,duration:duration});
     gsap.to("#fade",{opacity:0});
-    gsap.to("#menu",{fill:'white'});
+    gsap.to("#menu",{fill:'var(--page-color)'});
     menuOpen = Boolean(false);
 }
 

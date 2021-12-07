@@ -2,6 +2,8 @@
     --primary : #F1EEE9;
     --secondary: #E7DFD2;
     --tertiary: #3c3737;
+
+    --page-color: white;
 }
 
 ::selection {
@@ -77,6 +79,7 @@ body {
 }
 
 #fade {
+    background-color: white;
     position: absolute;
     bottom:0;
     left:0;
@@ -434,6 +437,14 @@ h2 {
     margin-bottom: 20%;
 }
 
+.logo-small {
+    background-size:75%;background-image: url('images/logo-small.svg');
+}
+
+.diagram {
+    width: 100%;height:200px;margin-top:40px;background-image: url('images/folding-diagram.svg');background-repeat: no-repeat;background-position:center;background-size: contain;
+}
+
 @media (max-width:1024px) {
     ul {
         width: 100%;
@@ -457,7 +468,14 @@ h2 {
     }
 }
 
+
+
 @media (pointer: coarse) {
+    .toggle-container {
+        transform: scale(2);
+        margin-top: 40px;
+        margin-right: 40px;
+    }
     .illust {
         height:50vw;
         width:50vw;

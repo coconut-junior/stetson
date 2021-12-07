@@ -1,5 +1,5 @@
-const primary = "#F1EEE9";
-const secondary = "#E7DFD2";
+const primary = "var(--primary)";
+const secondary = "var(--secondary)";
 
 var chart = document.querySelector('.chart');
 var men_sizes = {
