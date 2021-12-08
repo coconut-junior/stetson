@@ -9,9 +9,9 @@ toggle.style.display = 'flex';
 toggle.style.flexDirection = 'row-reverse';
 toggle.style.overflow = 'hidden';
 toggle.style.borderRadius = '100px';
-toggle.style.backgroundColor = '#18202d';
+toggle.style.backgroundColor = '#0E1116';
 toggle.style.cursor = 'pointer';
-toggle.style.backgroundImage = "url('images/toggle.png')";
+toggle.style.backgroundImage = "url('images/toggle.svg')";
 toggle.style.backgroundPosition = 'center';
 toggle.style.backgroundSize = 'contain';
 toggle.style.backgroundRepeat = 'no-repeat';
@@ -21,7 +21,7 @@ toggle.style.marginLeft = '40px';
 toggle_outer.style.height = '25px';
 toggle_outer.style.width = '25px';
 toggle_outer.style.borderRadius = '50%';
-toggle_outer.style.backgroundColor = '#18202d';
+toggle_outer.style.backgroundColor = '#0E1116';
 toggle_outer.style.position = 'relative';
 toggle_outer.style.right = '8px';
 toggle_outer.style.top = '8px';
@@ -33,9 +33,9 @@ toggle_outer.style.filter = 'invert()';
 
 function disableDark() {
     document.head.removeChild(darkStyle);
-    document.body.style.cssText = 'transition:0.3s; !important;';
+    document.body.style.cssText = 'transition:0.3s;';
     toggle_outer.style.right = '42px';
-    toggle_outer.style.backgroundColor = 'rgba(240,240,240)';
+    toggle_outer.style.backgroundColor = 'white';
     toggle.style.filter = 'none';
     toggle_outer.style.filter = 'none';
     darkMode = true;
@@ -43,9 +43,9 @@ function disableDark() {
 
 function enableDark() {
     document.head.appendChild(darkStyle);
-    document.body.style.cssText = 'transition:0.3s; !important;';
+    document.body.style.cssText = 'transition:0.3s;';
     toggle_outer.style.right = '8px';
-    toggle_outer.style.backgroundColor = 'rgba(20,20,20)';
+    toggle_outer.style.backgroundColor = '#0E1116';
     toggle.style.filter = 'invert()';
     toggle_outer.style.filter = 'invert()';
     darkMode = false;
