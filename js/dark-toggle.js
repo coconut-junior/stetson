@@ -51,17 +51,18 @@ function enableDark() {
     darkMode = false;
 }
 
-
+var tl = gsap.timeline();
 toggle.addEventListener('click', function() {
-
     if (darkMode == true) {
         enableDark();
     }
     else {
         disableDark();
     }
+    
+    tl.to('toggle-outer', {width:'35px',borderRadius:"15px",duration:0.2,ease: "expo.out"})
+    .to('toggle-outer',{width:'25px',borderRadius:"50%",duration:0.2,ease: "expo.out"});
 });
-
 
 document.querySelector('.toggle-container').appendChild(toggle);
 toggle.appendChild(toggle_outer);
@@ -74,13 +75,17 @@ var darkStyle = document.createElement('style');
         --tertiary: #9899A2;
         --page-color: #2F3142;
     }
+    ::selection {
+        background-color: #F1EEE9;
+        color: #2F3142;
+    }
     body {
         background-color: #1D1D2A;
         color: #9899A2;
     }
 
     h1,h2 {
-        color: #9899A2;
+        color: var(--tertiary);
     }
 
     .size-chart {
@@ -110,10 +115,6 @@ var darkStyle = document.createElement('style');
 
     .clouds {
         display: none;
-    }
-
-    .links {
-        filter:invert();
     }
 
     .hero {

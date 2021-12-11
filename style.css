@@ -280,7 +280,6 @@ h1 {
     font-size: 3em;
     z-index: 2;
     margin: 40px;
-    mix-blend-mode: difference;
 }
 
 h2 {

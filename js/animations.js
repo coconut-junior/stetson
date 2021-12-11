@@ -55,7 +55,6 @@ if(!isMobile()) {
     });
 
     //fix cloud width
-    console.log(document.body.clientWidth);
     document.querySelector(".clouds").style.width = document.body.clientWidth - 80 + "px";
 }
 else {
