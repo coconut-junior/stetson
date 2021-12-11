@@ -88,6 +88,10 @@ var darkStyle = document.createElement('style');
         color: var(--tertiary);
     }
 
+    .title-block {
+        border-color: var(--secondary);
+    }
+
     .size-chart {
         color: white;
     }
