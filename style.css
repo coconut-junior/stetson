@@ -466,7 +466,7 @@ h2 {
 
 
 
-@media (pointer: coarse) and (min-width: 360px) and (max-width: 900px) {
+@media (pointer: coarse) and (min-width: 240px) and (max-width: 1024px) {
     .toggle-container {
         transform: scale(2);
         margin-top: 40px;
